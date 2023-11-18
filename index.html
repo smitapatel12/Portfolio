@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c72029c7f4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+                <img src="port.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p> CODER / Web-Developer </p> -->
+                <h1>Hi, I'm <span>SMITA</span><br>I'm  Student at <span>MMMUT,GKP</span></h1>
+                <h1>I'm a enthusiastic <span class="text"></span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                     <p>My name is Smita patel. <br> I am from varanasi. <br>I am a 3rd year student at Madan Mohan
+                        Malaviya University Of Technology from CSE branch. <br>My goal is to become a Full Stack
+                        Developer.<br><br></p> 
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Achivements</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>CODING</span><br>-> C language,C++ language,Java </li>
+                            <li><span>CYBER SECURITY</span><br>-> basics of cyber security</li>
+                            <li><span>WEB DEVELOPMENT</span><br>-> HTML , CSS , JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span> Codechef </span><br>->Highest Ranking 1234</li>
+                            <li><span> Hackerrank</span><br> ->3-Star C++ Coder</li>
+                            <li>->3-Star C Coder</li>
+                            <li>->2-Star JAVa Coder</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2018</span><br>-> Passed class 10 (88%)</li>
+                            <li><span>2020</span><br>-> Passed class 12 PCM (90.2%)</li>
+                             <li><span>2021-2025</span><br>-> B.tech(CSE) MMMUT,Gorakhpur</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /services -->
+
+
+    <!-- <div class="copyright">
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Services Provided here...</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Developer</h2>
+                        <p>A web developer's job is to create websites. While their primary role is to ensure the
+                            website is visually appealing and easy to navigate, many web developers are also responsible
+                            for the website's performance and capacity.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Cybersecurity consultant</h2>
+                        <p>Cybersecurity consultants identify problems, evaluate security issues, assess risk, and
+                            implement solutions to defend against threats to companies' networks and computer systems.
+                            They deal with many variables when evaluating security systems and craft layers of
+                            protection in a fast-changing IT landscape.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>Malware analyst</h2>
+                        <p>A malware analyst works in computer and network security “to examine, identify, and
+                            understand the nature of cyber-threats such as viruses, worms, bots, rootkits, and Trojan
+                            horses,” explains the Infosec Institute.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
+
+        <!-- /portfolio -->
+        <!-- my projects -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="todolist2.jpg">
+                        <div class="layer">
+                            <h3>To do list</h3>
+                            <p>A list of tasks that need to be completed, typically organized in order of priority.</p>
+                            <a href=" https://smitapatel12.github.io/To_Do_List/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Calculator2.jpg">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>A calculator is a device that performs arithmetic operations.Basic
+                                calculators can do only addition,subtraction, multiplication and division.</p>
+                            <a href=" https://smitapatel12.github.io/Calculator/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="temperature.jpg">
+                        <div class="layer">
+                            <h3>Temperature Convertor</h3>
+                            <p>A basic web-based temperature calculator application built using HTML,CSS and JavaScript.</p>
+                            <a href="https://smitapatel12.github.io/Temperature_Convertor/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="time.jpg">
+                        <div class="layer">
+                            <h3>Time App</h3>
+                            <p>Time App displays the time and date can be useful when you want to know the time and date.</p>
+                            <a href="https://smitapatel12.github.io/Time_App/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <!-- contacts -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>smita.mgs1215@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+91 8318422930</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/smitapatel12"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/smita100007/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/smita-patel-a78064230"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                        <!-- /resume -->
+
+                        <a href="my resume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Facebook -->
+            <!-- Log in or sign up to view -->
+            <!-- See posts, photos and more on Facebook -->
+            <!-- <div class="copyright">
+                <p>Copyright @ .</p>
+            </div>
+        </div> -->
+
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyN2wX43UdgvFDGJKYuvU-nVzEeO7qIVCsOnNfONkmAJBZ-lHjhvympyQJfqy5XPnH0Yg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+    var typed = new Typed('.text', {
+      strings: ['CODER ','Frontend Developer'],
+      typeSpeed: 50,
+      backDelay: 1000,
+      loop: true
+    });
+  </script>
+</body>
+
+
+</html>
